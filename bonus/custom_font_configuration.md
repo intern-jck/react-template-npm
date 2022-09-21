@@ -1,24 +1,15 @@
-# ✨ Custom Font Configuration
-By default webpack will not allow the import of custom font types. This allow this feature we will add a new fule to our configuration. 
+# Custom Font Configuration
+By default webpack will not allow the import of custom font types. This allow this feature we will add a new fule to our configuration.
 
-Inside webpack.config.js: 
-```js 
+webpack.config.js:
+
+```js
 module: {
     rules: [
-      {
-        test: /\.(jsx|js)$/,
-        exclude: /node_modules/,
-        loader: "babel-loader",
-      },
-      {
-        test: /\.s[ac]ss$/i,
-        use: ["style-loader", "css-loader", "sass-loader"],
-      },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: "asset/resource",
-      },
-      // new rule to allow import of custom fonts
+
+      //...
+
+      // ADd new rule to allow import of custom fonts.
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
@@ -27,9 +18,9 @@ module: {
   },
 ```
 
-Now that our webpack is setup we can import and create custom font faces. 
+Now that our webpack is setup we can import and create custom font faces.
 
-Inside index.css/.scss:
+index.css/.scss:
 ```css
 @font-face {
   font-family: 'Prototype Regular';

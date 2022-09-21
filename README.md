@@ -1,6 +1,19 @@
 # React App Template with NPM Package Manager
 
+### See bonus content for setup for font, linter, images and Sass
+#### Feel free to remove bonus and assets folder after new project is started
+
+
+## !! MAKE SURE TO CREATE NEW GIT REPO WHEN STARTING NEW PROJECT !!
+
+run dev
+
+```bash
+npm run dev
+```
+
 ## Recipe
+
 
 ```bash
 git init
@@ -115,7 +128,6 @@ export default App;
 App.css
 
 ```css
-  /* I'd use App.css for app wide styling like layout of top level components. */
 .App {
   border: 4px solid black;
   width: 50vw;
@@ -129,7 +141,7 @@ App.css
 Create Babel and WebPack config files
 
 ```bash
-touch webpack.config.js babel.rc
+touch webpack.config.js .babelrc
 ```
 
 webpack.config.js
@@ -187,12 +199,6 @@ Make sure to add the origin of the new repo to this repo
 ```bash
 git add origin https://github.com/["GITHUB_USER_NAME"]/["GITHUB_REPO_NAME"]
 git push origin main
-```
-
-run dev
-
-```bash
-npm run dev
 ```
 
 ENJOY!!!
