@@ -14,14 +14,12 @@ npm run dev
 
 ## Recipe
 
-
 ```bash
 git init
 touch .gitignore README.md
 ```
 
 .gitignore
-
 ```bash
 node_modules/
 ```
